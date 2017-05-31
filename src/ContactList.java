@@ -4,11 +4,11 @@
  * which includes his/her first name, last name, street address, email address, 
  * phone number and notes.  
  */
-import java.util.ArrayList; 
+import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.*; // objects can be read back from the file into the variables in memory
+import java.io.*;
 
-public class ContactList {
+public class ContactList implements Serializable {
     private ArrayList<Contact> contacts;
     private Scanner scanner;
 
@@ -20,34 +20,41 @@ public class ContactList {
     }
 
     /**
-     * (UseCase1) Creates a new Contact object and adds it to the list, if there is room.
+     * Creates a new Contact object and adds it to the list. If the user leaves
+     * the last name blank, the user will not be entered into the contact list.
      */
-    public void addContact(String first, String last, String streetAddress, String email,
-                           String phone, String notes) {
-        // Write the object to the file
-
+    public void addContact(String first, String last, String streetAddress, String email, String phone, String notes) {
     }
 
     /**
-     * (UseCase2) Returns a Stirng containing all the data in the list.
+     * Returns a String containing entire contact list. Sorted by last name,
+     * then first name. The sorting is case Insensitive.
      */
     public String toString() {
-        return null;
+        return "";
     }
-    
+
     /**
-     * (UseCase3) Retrieves a person's information by last name. 
+     * Retrieves a person's information by last name. The search is case
+     * INsensitive. Prompts the user if there is no such last name. Otherwise
+     * all contacts with same last name will be displayed.
      */
     public String byLastName() {
-        return null;
-     // Read the objects back in from the file
+        return "";
     }
-    
+
     /**
-     * (UseCase4) Automatically save the contact list to the file when the user presses the JButton "QUIT". 
+     * Saves to a data file on the disk containing all of the current contacts
+     * when the user quits the program.
      */
     public void saveToDisk() {
     }
-    
 
+    /**
+     * Starts the contact list program and opens existing data file on disk. The
+     * system begins with an empty contact list if there is no data file on
+     * disk.
+     */
+    public void openFileOnDisk() {
+    }
 }
