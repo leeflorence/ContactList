@@ -23,8 +23,9 @@ public class ContactList implements Serializable {
      * Creates a new Contact object and adds it to the list. If the user leaves
      * the last name blank, the user will not be entered into the contact list.
      */
-    public void addContact(String first, String last, String streetAddress, 
-                           String email, String phone, String notes) {
+    public static void addContact() {
+        //String first, String last, String streetAddress, 
+        //String email, String phone, String notes
     }
 
     /**
@@ -40,7 +41,7 @@ public class ContactList implements Serializable {
      * INsensitive. Prompts the user if there is no such last name. Otherwise
      * all contacts with same last name will be displayed.
      */
-    public String byLastName() {
+    public static String byLastName() {
         return "";
     }
 
@@ -48,7 +49,7 @@ public class ContactList implements Serializable {
      * Saves to a data file on the disk containing all of the current contacts
      * when the user quits the program.
      */
-    public void saveToDisk() {
+    public static void saveToDisk() {
     }
 
     /**
@@ -56,6 +57,7 @@ public class ContactList implements Serializable {
      * system begins with an empty contact list if there is no data file on
      * disk.
      */
-    public void openFileOnDisk() {
+    public static String openFileOnDisk() {
+        return "";
     }
 }
