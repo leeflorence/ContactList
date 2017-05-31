@@ -1,16 +1,15 @@
+
 /**
- * Ask the user to select one of the following five UseCases:
- * UseCase1 to enter a new person into the contact list.
- * UseCase2 to print the entire contact list.
- * UseCase3 to retrieve a person's information by last name.
- * UseCase4 to quit the program and save to disk.
- * UseCase5 to start the program and open existing file on disk.
+ * Test class ContactList by calling all methods on a ContactList object. 
+ * 
+ * Ask the user to select one of the five options that includes enters a new
+ * person into the contact list, prints the entire contact list, retrieves a
+ * person's information by last name, quits the program and saves to disk, and
+ * starts the program and opens existing file on disk.
  */
 
 public class Main {
-
     public static void main(String[] args) {
-        GuiApp guiApp;
-        guiApp = new GuiApp();
+;
     }
 }
