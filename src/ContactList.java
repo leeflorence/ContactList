@@ -23,7 +23,8 @@ public class ContactList implements Serializable {
      * Creates a new Contact object and adds it to the list. If the user leaves
      * the last name blank, the user will not be entered into the contact list.
      */
-    public void addContact(String first, String last, String streetAddress, String email, String phone, String notes) {
+    public void addContact(String first, String last, String streetAddress, 
+                           String email, String phone, String notes) {
     }
 
     /**
