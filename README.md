@@ -1,3 +1,3 @@
-ContactList Project for CS1A Team7-AM
+CS1A ContactList Project by Team7-AM
 
-(Draft of Task2: submitted on June 7)
+Task2 Draft submitted on June 7
