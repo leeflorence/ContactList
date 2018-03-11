@@ -11,7 +11,7 @@ public class UI {
 
     public static void run() {
         /**
-         * Constructs a new ContactList object.(PF)
+         * Constructs a new ContactList object.
          */
         ContactList contactList = new ContactList();
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class UI {
         contactList.loadContactsFromFile();
 
         /**
-         * Reads the user's choice and prints the result immediately.(YL)
+         * Reads the user's choice and prints the result immediately.
          */
         boolean done = false;
         while (!done) {
