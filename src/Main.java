@@ -1,107 +1,127 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.*;
+package Task4Final;
 
 /**
- * Test class ContactList by calling all methods on a ContactList object.
+ * Tests the classes ContactList and Contact by calling the class UI that will
+ * ask user to select from a list of choices, which include Create Contact,
+ * Print Contacts, Search Contacts and Exit The Program.
  */
 
 public class Main {
     public static void main(String[] args) {
-
-        /* Constructs an object for class ContactList */
-        ContactList contactList;
-        contactList = new ContactList();
-
-        /* Ask the user to select one of the four options */
-        Scanner scanner = new Scanner(System.in);
-        boolean done = false;
-        while (!done) {
-            System.out.println("PLEASE SELECT \n" 
-                               + "1: CREATE A NEW CONTACT \n" 
-                               + "2: PRINT CONTACTS \n"
-                               + "3: SEARCH CONTACTS \n" 
-                               + "4: EXIT THE PROGRAM \n");
-
-            int option = scanner.nextInt();
-            switch (option) {
-            case 1: {
-                contactList.addContact(); // add new person into contact list
-                System.out.println("The new contact has been created and saved to the contact list \n");
-                break;
-            }
-            case 2: {
-                System.out.println("Here is the entire contact list: \n" + contactList + "\n");
-                // call the toString() method implicitly
-
-                break;
-            }
-            case 3: {
-                System.out.println("Here is the contact information for the entered last name: \n"
-                        + contactList.searchByLastName(""));
-                break;
-            }
-            case 4: {
-                System.out.println("" + "Quit and save to the contact list \n");
-                contactList.saveToFile();
-                done = true;
-                break;
-            }
-            default: {
-                System.out.println("Invalid option \n");
-                break;
-            }
-            }
-        }
+        /**
+         * The program provides a list of options for the user. Reads the user
+         * input and prints the result.(YL)
+         */
+        UI.run();
     }
 }
 
-/* OUTPUT 
- PLEASE SELECT 
-1: CREATE A NEW CONTACT 
-2: PRINT CONTACTS 
-3: SEARCH CONTACTS 
-4: EXIT THE PROGRAM 
+
+/*
+ * OUTPUT
+ * 
+Contact Manager Data: Loaded
+
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
 1
-The new contact has been created and saved to the contact list 
+Please enter the following information:
+Last Name (required): Maclean
+First Name: Bob
+Address: 15 Baker Street, Chico, CA
+Email: bobmcln@zombie.com
+Phone Number: 650-344-8927
+Notes: His birthday is June 20. 
+=== Contact Saved! === 
 
-PLEASE SELECT 
-1: CREATE A NEW CONTACT 
-2: PRINT CONTACTS 
-3: SEARCH CONTACTS 
-4: EXIT THE PROGRAM 
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
-2
-Here is the entire contact list: 
+1
+Please enter the following information:
+Last Name (required): 
+*** Last name is required ***
 
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
-PLEASE SELECT 
-1: CREATE A NEW CONTACT 
-2: PRINT CONTACTS 
-3: SEARCH CONTACTS 
-4: EXIT THE PROGRAM 
+2 
+=== There are 2 contacts in the Contact List ===
+
+Name:            Maclean, Bob
+Address:         15 Baker Street, Chico, CA
+Email:           bobmcln@zombie.com
+Phone Number:    650-344-8927
+Notes:           His birthday is June 20. 
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Name:            Maclean, Julie
+Address:         15 Baker Street, Chico, CA
+Email:           juliemcln@zombie.com
+Phone Number:    650-384-8821
+Notes:           Professional Florist.
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
 3
-Here is the contact information for the entered last name: 
+Search by last name:  Maclean
+=== 2 Contacts Found! ===
 
-PLEASE SELECT 
-1: CREATE A NEW CONTACT 
-2: PRINT CONTACTS 
-3: SEARCH CONTACTS 
-4: EXIT THE PROGRAM 
+Name:            Maclean, Bob
+Address:         15 Baker Street, Chico, CA
+Email:           bobmcln@zombie.com
+Phone Number:    650-344-8927
+Notes:           His birthday is June 20. 
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Name:            Maclean, Julie
+Address:         15 Baker Street, Chico, CA
+Email:           juliemcln@zombie.com
+Phone Number:    650-384-8821
+Notes:           Professional Florist.
+++++++++++++++++++++++++++++++++++++++++++++++++++
 
-5
-Invalid option 
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
-PLEASE SELECT 
-1: CREATE A NEW CONTACT 
-2: PRINT CONTACTS 
-3: SEARCH CONTACTS 
-4: EXIT THE PROGRAM 
+3
+Search by last name:
+Maple
+*** No Contacts with that last name where found. ***
+
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
+
+A
+*** Invalid entry. Please enter again! *** 
+
+Would you like to: 
+[1] Create Contact
+[2] Print Contacts
+[3] Search Contacts
+[4] Exit the program
 
 4
-Quit and save to the contact list 
+Contact List Saved: See you next time! 
 
  */
 
