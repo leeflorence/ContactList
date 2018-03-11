@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         /**
          * The program provides a list of options for the user. Reads the user
-         * input and prints the result.(YL)
+         * input and prints the result.
          */
         UI.run();
     }
@@ -58,17 +58,17 @@ Would you like to:
 2 
 === There are 2 contacts in the Contact List ===
 
-Name:            Maclean, Bob
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, BOB
+Address:         15 BAKER STREET, CHICO, CA
 Email:           bobmcln@zombie.com
 Phone Number:    650-344-8927
-Notes:           His birthday is June 20. 
+Notes:           HIS BIRTHDAY IS JUNE 20. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-Name:            Maclean, Julie
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, JULIE
+Address:         15 BAKER STREET, CHICO, CA
 Email:           juliemcln@zombie.com
 Phone Number:    650-384-8821
-Notes:           Professional Florist.
+Notes:           PROFESSIONAL FLORIST.
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Would you like to: 
@@ -81,17 +81,17 @@ Would you like to:
 Search by last name:  Maclean
 === 2 Contacts Found! ===
 
-Name:            Maclean, Bob
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, BOB
+Address:         15 BAKER STREET, CHICO, CA
 Email:           bobmcln@zombie.com
 Phone Number:    650-344-8927
-Notes:           His birthday is June 20. 
+Notes:           HIS BIRTHDAY IS JUNE 20. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-Name:            Maclean, Julie
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, JULIE
+Address:         15 BAKER STREET, CHICO, CA
 Email:           juliemcln@zombie.com
 Phone Number:    650-384-8821
-Notes:           Professional Florist.
+Notes:           PROFESSIONAL FLORIST.
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Would you like to: 
@@ -124,4 +124,3 @@ Would you like to:
 Contact List Saved: See you next time! 
 
  */
-
