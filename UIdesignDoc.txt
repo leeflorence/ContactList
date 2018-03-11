@@ -9,8 +9,6 @@ Would you like to:
 2
 === There are 0 contacts in the Contact List ===
 
-
-
 Would you like to: 
 [1] Create Contact 
 [2] Print Contacts 
@@ -30,12 +28,9 @@ Notes: Professional Florist.
 
 
 ///////////////////////////////////////////////
-
-
-
+///////////////////////////////////////////////
 
 Contact Manager Data: Loaded
-
 
 Would you like to: 
 [1] Create Contact
@@ -74,17 +69,17 @@ Would you like to:
 2 
 === There are 2 contacts in the Contact List ===
 
-Name:            Maclean, Bob
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, BOB
+Address:         15 BAKER STREET, CHICO, CA
 Email:           bobmcln@zombie.com
 Phone Number:    650-344-8927
-Notes:           His birthday is June 20. 
+Notes:           HIS BIRTHDAY IS JUNE 20. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-Name:            Maclean, Julie
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, JULIE
+Address:         15 BAKER STREET, CHICO, CA
 Email:           juliemcln@zombie.com
 Phone Number:    650-384-8821
-Notes:           Professional Florist.
+Notes:           PROFESSIONAL FLORIST.
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Would you like to: 
@@ -97,17 +92,17 @@ Would you like to:
 Search by last name:  Maclean
 === 2 Contacts Found! ===
 
-Name:            Maclean, Bob
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, BOB
+Address:         15 BAKER STREET, CHICO, CA
 Email:           bobmcln@zombie.com
 Phone Number:    650-344-8927
-Notes:           His birthday is June 20. 
+Notes:           HIS BIRTHDAY IS JUNE 20. 
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-Name:            Maclean, Julie
-Address:         15 Baker Street, Chico, CA
+Name:            MACLEAN, JULIE
+Address:         15 BAKER STREET, CHICO, CA
 Email:           juliemcln@zombie.com
 Phone Number:    650-384-8821
-Notes:           Professional Florist.
+Notes:           PROFESSIONAL FLORIST.
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Would you like to: 
