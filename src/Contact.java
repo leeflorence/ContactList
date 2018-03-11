@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 public class Contact implements Comparable<Contact>, Serializable {
     /**
-     * Defines all instance variables private.(PF)
+     * Defines all instance variables private.
      */
     private String firstName;
     private String lastName;
@@ -20,20 +20,25 @@ public class Contact implements Comparable<Contact>, Serializable {
     private String notes;
 
     /**
-     * Default Constructor for Contact.(VM)
+     * Generates Serial version Id.
+     */
+    public static final long serialVersionUID = 42L;
+
+    /**
+     * Default Constructor for Contact.
      */
     public Contact() {
     }
 
     /**
-     * Constructor for Contact with only one parameter lastName.(VM)
+     * Constructor for Contact with only one parameter lastName.
      */
     public Contact(String lastName) {
         this.lastName = lastName;
     }
 
     /**
-     * Parameterized Constructor for Contact with all parameters.(PF)
+     * Parameterized Constructor for Contact with all parameters.
      */
     public Contact(String firstName, String lastName, String streetAddress,
                    String email, String phone, String notes) { 
@@ -45,38 +50,38 @@ public class Contact implements Comparable<Contact>, Serializable {
         this.notes = notes;
     }
 
-    // Return the first name of this contact.(PF)
+    // Return the first name of this contact.
     public String getFirstName() {
         return firstName;
     }
 
-    // Returns the last name of this contact.(PF)
+    // Returns the last name of this contact.
     public String getLastName() {
         return lastName;
     }
 
-    // Returns the street address of this contact.(PF)
+    // Returns the street address of this contact.
     public String getStreetAddress() {
         return streetAddress;
     }
 
-    // Returns the email of this contact.(PF)
+    // Returns the email of this contact.
     public String getEmail() {
         return email;
     }
 
-    // Returns the phone number of this contact.(PF)
+    // Returns the phone number of this contact.
     public String getPhone() {
         return phone;
     }
 
-    // Returns the notes of this contact.(PF)
+    // Returns the notes of this contact.
     public String getNotes() {
         return notes;
     }
 
     /**
-     * Return a String representation of this contact.(YL)
+     * Return a String representation of this contact.
      */
     public String toString() { 
         return "Name:            " + lastName + ", " + firstName + "\n"
@@ -93,7 +98,7 @@ public class Contact implements Comparable<Contact>, Serializable {
      * last names are used.
      * 
      * Returns a negative integer, zero, or a positive integer as this contact
-     * is less than, equal to, or greater than the other contact.(VM)
+     * is less than, equal to, or greater than the other contact.
      */
     public int compareTo(Contact other) {
         int result = lastName.compareToIgnoreCase(other.lastName);
