@@ -16,13 +16,13 @@ import java.io.ObjectOutputStream;
 
 class ContactList {
     /**
-     * Defines all instance variables.(PF)
+     * Defines all instance variables.
      */
     private ArrayList<Contact> contacts;
     private Scanner scanner;
 
     /**
-     * Default constructor.(PF)
+     * Default constructor.
      */
     public ContactList() {
         contacts = new ArrayList<Contact>();
@@ -30,7 +30,7 @@ class ContactList {
     }
 
     /**
-     * Add a new Contact object to the ContactList.(VM)
+     * Add a new Contact object to the ContactList.
      */
     public void addContact() {
         Contact contact = readEntry();
@@ -38,27 +38,27 @@ class ContactList {
     }
 
     /**
-     * Gets user input and stores in a new Contact object.(YL)
+     * Gets user input and stores in a new Contact object.
      */
     public Contact readEntry() {
         String firstName, lastName, streetAddress, email, phone, notes;
         System.out.print("Please enter the following information:" 
                          + "\nLast Name (required): ");
-        lastName = scanner.nextLine().trim();
+        lastName = scanner.nextLine().trim().toUpperCase();
         if (lastName.isEmpty()) {
             System.out.println("\n*** Last name is required! ***\n");
             return readEntry();  
         } else {
             System.out.print("First Name: ");
-            firstName = scanner.nextLine();
+            firstName = scanner.nextLine().toUpperCase();
             System.out.print("Address: ");
-            streetAddress = scanner.nextLine();
+            streetAddress = scanner.nextLine().toUpperCase();
             System.out.print("Email: ");
-            email = scanner.nextLine();
+            email = scanner.nextLine().toLowerCase();
             System.out.print("Phone Number: ");
             phone = scanner.nextLine();
             System.out.print("Notes: ");
-            notes = scanner.nextLine();
+            notes = scanner.nextLine().toUpperCase();
             // Constructs a Contact object to store the user input.
             Contact newContact = new Contact(firstName, lastName, 
                                              streetAddress, email, phone, notes);
@@ -69,7 +69,7 @@ class ContactList {
 
     /**
      * Prints the entire ContactList. Sorted by last name, then first name. The
-     * sorting is case insensitive.(YL,VM)
+     * sorting is case insensitive.
      */
     public String toString() {
         Collections.sort(contacts);
@@ -85,7 +85,7 @@ class ContactList {
     /**
      * Returns a String of contacts containing the same last name as user input
      * in ascending order and tells the user the number of contacts found. The
-     * search is case insensitive.(PF,YL)
+     * search is case insensitive.
      */
     public String searchByLastName() {
         Collections.sort(contacts);
@@ -110,7 +110,7 @@ class ContactList {
 
     /**
      * Reads the Contact objects back in from the file. If the file is not
-     * found, the contact list will be empty.(YL) 
+     * found, the contact list will be empty.
      */
     public void loadContactsFromFile() {
         try {
@@ -128,7 +128,7 @@ class ContactList {
 
     /**
      * Writes the Contact objects to the file containing all of the current
-     * contacts.(YL) 
+     * contacts.
      */
     public void saveToFile() {
         try {
