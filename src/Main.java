@@ -17,9 +17,12 @@ public class Main {
 }
 
 
-/*
+
+
+
+/*****************************************************
  * OUTPUT
- * 
+ *****************************************************
 Contact Manager Data: Loaded
 
 Would you like to: 
@@ -103,7 +106,7 @@ Would you like to:
 3
 Search by last name:
 Maple
-*** No Contacts with that last name where found. ***
+*** No Contacts with that last name were found. ***
 
 Would you like to: 
 [1] Create Contact
@@ -123,4 +126,5 @@ Would you like to:
 4
 Contact List Saved: See you next time! 
 
- */
+*****************************************************/
+
