@@ -101,7 +101,7 @@ class ContactList {
             }
         }
         if (occurrences == 0) {
-            return "*** No Contacts with that last name where found. *** \n";
+            return "*** No Contacts with that last name were found. *** \n";
         } else {
             return "=== " + occurrences + " Contacts Found! ===\n\n" 
                     + matchingLastname;
